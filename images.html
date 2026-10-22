@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Google Image Search</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="search-page image-page">
+  <header class="topbar">
+    <nav class="top-links" aria-label="Search navigation">
+      <a href="index.html">Google Search</a>
+      <a href="forms.html">Formuláře</a>
+    </nav>
+  </header>
+
+  <main class="home-content">
+    <h1 class="wordmark" aria-label="Google"><span class="blue">G</span><span class="red">o</span><span class="yellow">o</span><span class="blue">g</span><span class="green">l</span><span class="red">e</span><span class="image-label">Images</span></h1>
+    <form class="search-form" action="https://www.google.com/search" method="get">
+      <label class="visually-hidden" for="image-query">Search images</label>
+      <input type="hidden" name="tbm" value="isch">
+      <input class="search-input" id="image-query" type="search" name="q" autocomplete="off" required>
+      <div class="button-row">
+        <button class="search-button" type="submit">Google Image Search</button>
+      </div>
+    </form>
+  </main>
+  <footer class="site-footer">
+    <a href="https://ricik23.github.io/" target="_blank" rel="noopener noreferrer">Portfolio</a>
+    <a href="citace.md">Citace</a>
+    <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fricik23.github.io%2Fgooglesearch.github.io%2Fimages.html" target="_blank" rel="noopener noreferrer">Validovat HTML</a>
+    <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fricik23.github.io%2Fgooglesearch.github.io%2Fstyles.css&amp;profile=css3svg&amp;usermedium=all&amp;warning=1&amp;lang=cs" target="_blank" rel="noopener noreferrer">Validovat CSS</a>
+  </footer>
+</body>
+</html>

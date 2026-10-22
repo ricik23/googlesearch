@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ukázkové formuláře</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="forms-page">
+  <header class="topbar">
+    <a class="small-wordmark" href="index.html" aria-label="Google Search"><span class="blue">G</span><span class="red">o</span><span class="yellow">o</span><span class="blue">g</span><span class="green">l</span><span class="red">e</span></a>
+    <nav class="top-links" aria-label="Navigace">
+      <a href="index.html">Google Search</a>
+      <a href="images.html">Obrázky</a>
+      <a href="advanced.html">Pokročilé hledání</a>
+    </nav>
+  </header>
+
+  <main class="forms-content">
+    <h1>Ukázkové formulářové prvky</h1>
+    <p class="forms-note">Prvky slouží pouze jako ukázka. Formulář data nikam neodesílá.</p>
+    <form class="demo-form">
+      <fieldset class="demo-group">
+        <legend>Textová pole</legend>
+        <div class="demo-grid">
+          <label>Jméno<input type="text" name="name" placeholder="Jan Novák"></label>
+          <label>E-mail<input type="email" name="email" placeholder="jan@example.cz"></label>
+          <label>Heslo<input type="password" name="password" autocomplete="new-password"></label>
+          <label>Telefon<input type="tel" name="phone" placeholder="+420 123 456 789"></label>
+          <label>Webová stránka<input type="url" name="website" placeholder="https://example.cz"></label>
+          <label>Číselná hodnota<input type="number" name="quantity" min="0" max="100" value="1"></label>
+          <label>Datum<input type="date" name="date"></label>
+          <label>Čas<input type="time" name="time"></label>
+          <label>Vyhledávání<input type="search" name="search" placeholder="Hledat"></label>
+        </div>
+      </fieldset>
+
+      <fieldset class="demo-group">
+        <legend>Výběr možností</legend>
+        <label class="demo-control">Oblíbená kategorie
+          <select name="category">
+            <option value="">Vyberte možnost</option>
+            <option value="web">Web</option>
+            <option value="images">Obrázky</option>
+            <option value="news">Zprávy</option>
+          </select>
+        </label>
+        <span class="control-title">Zkušenost s HTML</span>
+        <div class="choice-row">
+          <label><input type="radio" name="experience" value="beginner"> Začátečník</label>
+          <label><input type="radio" name="experience" value="advanced"> Pokročilý</label>
+        </div>
+        <span class="control-title">Zájmy</span>
+        <div class="choice-row">
+          <label><input type="checkbox" name="interest" value="design"> Design</label>
+          <label><input type="checkbox" name="interest" value="code"> Programování</label>
+          <label><input type="checkbox" name="interest" value="accessibility"> Přístupnost</label>
+        </div>
+        <label class="demo-control">Úroveň spokojenosti
+          <input type="range" name="rating" min="0" max="10" value="5">
+        </label>
+        <label class="demo-control">Barva<input type="color" name="color" value="#4285f4"></label>
+      </fieldset>
+
+      <fieldset class="demo-group">
+        <legend>Soubor a zpráva</legend>
+        <label class="demo-control">Příloha<input type="file" name="attachment"></label>
+        <label class="demo-control">Poznámka<textarea name="message" rows="4" placeholder="Napište poznámku..."></textarea></label>
+      </fieldset>
+
+      <div class="demo-actions">
+        <button type="reset" class="search-button">Vymazat</button>
+        <button type="submit" class="advanced-button" disabled>Odeslat (nefunkční ukázka)</button>
+      </div>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <a href="https://ricik23.github.io/" target="_blank" rel="noopener noreferrer">Portfolio</a>
+    <a href="citace.md">Citace</a>
+    <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fricik23.github.io%2Fgooglesearch.github.io%2Fforms.html" target="_blank" rel="noopener noreferrer">Validovat HTML</a>
+    <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fricik23.github.io%2Fgooglesearch.github.io%2Fstyles.css&amp;profile=css3svg&amp;usermedium=all&amp;warning=1&amp;lang=cs" target="_blank" rel="noopener noreferrer">Validovat CSS</a>
+  </footer>
+</body>
+</html>

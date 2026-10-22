@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Google Advanced Search</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="advanced-page">
+  <header class="topbar">
+    <a class="small-wordmark" href="index.html" aria-label="Google Search"><span class="blue">G</span><span class="red">o</span><span class="yellow">o</span><span class="blue">g</span><span class="green">l</span><span class="red">e</span></a>
+    <nav class="top-links" aria-label="Search navigation">
+      <a href="index.html">Google Search</a>
+      <a href="forms.html">Formuláře</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="advanced-title">Advanced Search</h1>
+    <form class="advanced-form" action="https://www.google.com/search" method="get">
+      <div class="advanced-row">
+        <label for="all-words">all these words:</label>
+        <input id="all-words" type="text" name="as_q" autocomplete="off">
+      </div>
+      <div class="advanced-row">
+        <label for="exact-phrase">this exact word or phrase:</label>
+        <input id="exact-phrase" type="text" name="as_epq" autocomplete="off">
+      </div>
+      <div class="advanced-row">
+        <label for="any-words">any of these words:</label>
+        <input id="any-words" type="text" name="as_oq" autocomplete="off">
+      </div>
+      <div class="advanced-row">
+        <label for="none-words">none of these words:</label>
+        <input id="none-words" type="text" name="as_eq" autocomplete="off">
+      </div>
+      <div class="advanced-actions">
+        <button class="advanced-button" type="submit">Advanced Search</button>
+      </div>
+    </form>
+  </main>
+  <footer class="site-footer">
+    <a href="https://ricik23.github.io/" target="_blank" rel="noopener noreferrer">Portfolio</a>
+    <a href="citace.md">Citace</a>
+    <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fricik23.github.io%2Fgooglesearch.github.io%2Fadvanced.html" target="_blank" rel="noopener noreferrer">Validovat HTML</a>
+    <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fricik23.github.io%2Fgooglesearch.github.io%2Fstyles.css&amp;profile=css3svg&amp;usermedium=all&amp;warning=1&amp;lang=cs" target="_blank" rel="noopener noreferrer">Validovat CSS</a>
+  </footer>
+</body>
+</html>
